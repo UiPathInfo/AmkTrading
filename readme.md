@@ -1,3 +1,44 @@
+# AMK Trading — Fullstack Example
+
+This workspace contains a minimal fullstack web app:
+
+- Backend: Python + FastAPI (in `backend/`)
+- Frontend: React + Vite (in `frontend/`) using Bootstrap for responsive UI
+
+Files added:
+
+- [backend/main.py](backend/main.py)
+- [backend/requirements.txt](backend/requirements.txt)
+- [frontend/package.json](frontend/package.json)
+- [frontend/index.html](frontend/index.html)
+- [frontend/src/main.jsx](frontend/src/main.jsx)
+- [frontend/src/App.jsx](frontend/src/App.jsx)
+
+Run instructions
+
+1) Start backend (create virtualenv first):
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r backend/requirements.txt
+uvicorn backend.main:app --reload --port 8000
+```
+
+2) Start frontend:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The frontend (Vite) runs on port 5173 by default and talks to the backend at `http://localhost:8000`.
+
+Next steps
+
+- Run the commands above to start the app locally.
+- I can add Dockerfiles, tests, or more endpoints if you want — tell me which features to prioritize.
 The AI App Builder PromptSystem Goal: 
 Build a professional Native web appplication (using reactjs frontend and python backend) for an Indian Stock Market Swing Trading Screener.
 Core Logic (The 4-Phase Framework):
