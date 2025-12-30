@@ -127,6 +127,7 @@ def screen_stocks(tickers: List[str]) -> List[Dict[str, Any]]:
             
         except Exception as e:
             logging.error(f"ERROR fetching data for {ticker_symbol}: {e}")
+            break
             continue
     return passed_stocks
 
