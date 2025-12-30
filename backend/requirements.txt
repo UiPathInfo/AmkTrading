@@ -5,3 +5,4 @@ pandas
 yfinance
 odfpy
 pandas_ta
+gunicorn>=20.1.0
