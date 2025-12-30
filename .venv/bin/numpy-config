@@ -1,4 +1,4 @@
-#!/home/mph/Projects/AmkTrading/.venv/bin/python3
+#!/home/mph/Projects/AmkTrading/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
