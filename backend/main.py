@@ -41,3 +41,9 @@ def create_item(item: Item):
     _next_id += 1
     _items.append(item.dict())
     return item.dict()
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(app, host="0.0.0.0", port=8000, reload=False)
